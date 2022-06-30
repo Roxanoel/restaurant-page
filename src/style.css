@@ -14,6 +14,14 @@
     font-weight: 600;
 }
 
+@font-face {
+    font-family: 'Smallburg';
+    src: url('../fonts/smallburg/smallburg-Regular.woff') format('woff'),
+        url('../fonts/smallburg/smallburg-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+
 :root {
     color: white;
 }
@@ -23,13 +31,24 @@ body {
     margin: 0;
 }
 
+header {
+    padding-top: 1.5rem;
+}
+
+header, main {
+    padding-left: 2rem;
+}
+
 h1 {
     font-family: 'Blackwood Castle', serif;
-    padding-left: 2rem;
-    padding-top: 1.5rem;
     font-size: 5rem;
     margin: 0;
     text-shadow: 5px 5px black;
+}
+
+h2 {
+    font-family: 'Smallburg', sans-serif;
+    font-size: 1.5rem;
 }
 
 #content {
