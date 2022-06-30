@@ -27,6 +27,7 @@
 :root {
     /* colours */
     --parchment: #d7c9aa;
+    --parchment-darker: #C4AF82;
     --bistre: #2A1507;
     --upsdell-red: #a71125;
     --bright-yellow-crayola: #FFAB25;
@@ -66,6 +67,7 @@ header {
 h1 {
     font-family: 'Blackwood Castle', serif;
     font-size: 3rem;
+    letter-spacing: 3px;
     text-shadow: 5px 5px black;
 
     margin: 0;
@@ -94,16 +96,19 @@ h2 {
     text-align: center;
     color: var(--bistre);
 
-    display: border-box;
     padding: 16px;
 
-    width: 4rem;
+    width: fit-content;
 
-    background-color: var(--parchment);
+    background-color: var(--parchment-darker);
     
     /*border: 3px inset var(--bistre);*/
     /*border-bottom: none;*/
     border-radius: 10px 10px 0 0;
+}
+
+.links-container li.selected {
+    background-color: var(--parchment);
 }
 
 .main-container {
