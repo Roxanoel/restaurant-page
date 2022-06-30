@@ -81,7 +81,7 @@ h2 {
 .links-container {
     display: flex;
     justify-content: space-around;
-    gap: 3rem;
+    gap: 1rem;
 
     padding-left: 0;
     padding-right: 2rem;
