@@ -29,6 +29,7 @@
     --parchment: #d7c9aa;
     --parchment-darker: #C4AF82;
     --bistre: #2A1507;
+    --pale-red: #b45763;
     --upsdell-red: #a71125;
     --bright-yellow-crayola: #FFAB25;
     --slimy-green: #478E02;
@@ -151,7 +152,7 @@ h2 {
 
     background-color: var(--upsdell-red);
     border-radius: 5px;
-    border: 2px outset #b45763;
+    border: 2px outset var(--pale-red);
 
     padding: 1rem;
 }
@@ -263,6 +264,15 @@ h2 {
 
     align-self: center;
     justify-self: center;
+
+    background-color: var(--slimy-green);
+    border-radius: 10px;
+    border: 2px outset var(--bright-yellow-crayola);
+
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
 }
 
 #content {
