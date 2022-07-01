@@ -12,8 +12,8 @@ function generateHomepageContent(mainContainer) {
     const tagline = _createDivWithClass('tagline');
     tagline.textContent = _taglineText;
 
-    mainContainer.appendChild(goblins);
     mainContainer.appendChild(tagline);
+    mainContainer.appendChild(goblins);
 }
 
 function _createDivWithClass(className) {
