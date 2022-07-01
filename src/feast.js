@@ -3,5 +3,9 @@
 //#endregion
 
 function generateFeastPageContents() {
-    const mainContainer = document.getElementById('main-container');
+    console.log("success");
 }
+
+export {
+    generateFeastPageContents
+};
