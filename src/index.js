@@ -9,7 +9,7 @@ const linksText = ['The Den', 'Feast!', 'Contact'];
 
 //#region Execution
 renderSharedContent();
-generateHomepageContent();
+//generateHomepageContent(); DISABLED FOR TESTING
 //#endregion
 
 //#region Methods
