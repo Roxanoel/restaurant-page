@@ -75,13 +75,6 @@ h1 {
     margin: 0;
 }
 
-h2 {
-    font-family: 'Smallburg', sans-serif;
-    font-size: 1.5rem;
-
-    color: var(--bistre);
-}
-
 .links-container {
     display: flex;
     justify-content: space-around;
@@ -184,6 +177,13 @@ h2 {
     display: grid;
     align-items: center;
     justify-items: center;
+
+    font-family: 'Smallburg', sans-serif;
+    font-size: 1.5rem;
+
+    color: var(--bistre);
+
+    padding-top: 3rem;
 }
 
 #content {
