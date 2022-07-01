@@ -1,20 +1,23 @@
 import './style.css';
+import { generateHomepageContent } from './homepage';
+
 //#region Global State
-const mainContainer = document.getElementById('content');
+const content = document.getElementById('content');
 const restaurantName = "The Goblin's Den";
 const linksText = ['The Den', 'Feast!', 'Contact'];
 //#endregion
 
 //#region Execution
 renderSharedContent();
+generateHomepageContent();
 //#endregion
 
 //#region Methods
 
 // Generates the contents that are repeated for each page. 
 function renderSharedContent() {
-    mainContainer.appendChild(generateHeader());
-    mainContainer.appendChild(generateMain());
+    content.appendChild(generateHeader());
+    content.appendChild(generateMain());
 }
 
 // Generates the header; to be called inside generateSharedContent, for readability.
@@ -56,7 +59,7 @@ function generateLinkTabs() {
 function generateMain() {
     const main = document.createElement('main');
     const mainContainer = document.createElement('div');
-    mainContainer.classList.add('main-container');
+    mainContainer.setAttribute('id', 'main-container');
     main.appendChild(mainContainer);
     return main;
 }
