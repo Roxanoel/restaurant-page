@@ -1,6 +1,7 @@
 import './style.css';
 import { generateHomepageContent } from './homepage';
 import { generateFeastPageContents } from './feast';
+import { generateContactPageContents } from './contact';
 
 //#region Global State
 const content = document.getElementById('content');
@@ -12,6 +13,7 @@ const linksText = ['The Den', 'Feast!', 'Contact'];
 renderSharedContent();
 //generateHomepageContent(getMainContainer()); DISABLED FOR TESTING
 //generateFeastPageContents(getMainContainer());
+generateContactPageContents(getMainContainer());
 //#endregion
 
 //#region Methods
