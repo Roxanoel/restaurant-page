@@ -1,1 +1,1 @@
-cognsole.log('Hello World');
+import './style.css';

@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'Blackwood Castle';
+    src: url('../fonts/blackwood-castle/blacc___-webfont.woff2') format('woff2'),
+        url('../fonts/blackwood-castle/blacc___-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Blackwood Shadow';
+    src: url('../fonts/blackwood-castle/blaccs__-webfont.woff2') format('woff2'),
+        url('../fonts/blackwood-castle/blaccs__-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Smallburg';
+    src: url('../fonts/smallburg/smallburg-Regular.woff') format('woff'),
+        url('../fonts/smallburg/smallburg-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+:root {
+    /* colours */
+    --parchment: #d7c9aa;
+    --parchment-darker: #C4AF82;
+    --bistre: #2A1507;
+    --upsdell-red: #a71125;
+    --bright-yellow-crayola: #FFAB25;
+    --slimy-green: #478E02;
+
+    /* defaults for fonts */
+    color: white;
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background-image: url('../images/wood.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header, main {
+    padding: 0 2rem;
+}
+
+header {
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+main {
+    min-width: 760px;
+}
+
+h1 {
+    font-family: 'Blackwood Castle', serif;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    color: white;
+    text-shadow: 5px 5px black;
+
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Smallburg', sans-serif;
+    font-size: 1.5rem;
+
+    color: var(--bistre);
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1vw;
+
+    padding-left: 0;
+    padding-right: 2rem;
+    margin: 0;
+
+    list-style: none;
+}
+
+.links-container li {
+    font-size: 1.25rem;
+
+    text-align: center;
+    color: var(--bistre);
+
+    padding: 0.5rem 1rem;
+
+    width: 88px;
+
+    background-color: var(--parchment-darker);
+    
+    /*border: 3px inset var(--bistre);*/
+    /*border-bottom: none;*/
+    border-radius: 10px 10px 0 0;
+}
+
+.links-container li.selected {
+    background-color: var(--parchment);
+}
+
+.main-container {
+    background-color: var(--parchment);
+    border-radius: 20px;
+
+    width: 100%;
+    min-height: 85vh;
+
+    box-sizing: border-box;
+    padding: 2rem;
+    padding-top: 10vh;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.goblins {
+    display: flex;
+
+    padding: 2vw;
+    
+    justify-content: center;
+    gap: 2vw;
+}
+
+.goblin {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 2rem;
+
+    font-size: 24px;
+
+    background-color: var(--upsdell-red);
+    border-radius: 5px;
+    border: 2px outset #b45763;
+
+    padding: 1rem;
+}
+
+.goblin-img {
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+
+    border-radius: 50%;
+    border-style: outset;
+    border-color: var(--bright-yellow-crayola);
+
+    min-height: 20vh;
+    min-width: 20vh;
+}
+
+.goblin-img.feast {
+    background-image: url('../images/ai-goblin-tavern.png');
+}
+
+.goblin-img.drink {
+    background-image: url('../images/ai-goblin-tavern-4.png');
+}
+
+.goblin-img.play {
+    background-image: url('../images/goblin-tavern-2.png');
+}
+
+.tagline {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+#content {
+    
+    display: flex;
+    flex-direction: column;
+}
