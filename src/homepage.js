@@ -6,9 +6,7 @@ const _taglineText = 'They may be ugly, but they really know how to party!';
 //#endregion
 
 //#region Methods
-function generateHomepageContent() {
-    const mainContainer = document.getElementById('main-container');
-    
+function generateHomepageContent(mainContainer) {
     const goblins = _assembleGoblinImages();
 
     const tagline = _createDivWithClass('tagline');
