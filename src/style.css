@@ -123,10 +123,10 @@ h2 {
 
     box-sizing: border-box;
     padding: 2rem;
-    padding-top: 10vh;
     
     display: flex;
     flex-direction: column;
+    gap: 5vh;
 }
 
 .goblins {
@@ -190,6 +190,65 @@ h2 {
     color: var(--bistre);
 
     padding-top: 3rem;
+}
+
+.card-container {
+    padding: 1rem;
+}
+
+.card {
+    background-color: var(--bistre);
+
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 10% 60% 30%; 
+    gap: 1rem;
+
+    min-height: 25vh;
+}
+
+.card h3 {
+    grid-column: 1 / -1;
+    
+    margin: 0;
+}
+
+.card .card-img {
+    grid-row: 2 / -1;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.pub .card-img {
+    background-position: top center;
+    background-image: url('../images/Medieval_Dinner_\(82409393\).jpeg');
+}
+
+.events .card-img {
+    background-image: url('../images/medieval-kitchen.jpg');
+}
+
+.card p {
+    margin: 0;
+}
+
+.card button {
+    grid-column: 2 / -1;
+
+    height: fit-content;
+    width: 15vw;
+
+    padding: 0.5rem;
+
+    align-self: center;
+    justify-self: center;
 }
 
 #content {
