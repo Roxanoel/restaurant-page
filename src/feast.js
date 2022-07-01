@@ -26,6 +26,9 @@ function _generateHeading() {
 }
 
 function _generateCard(className) {
+    const cardContainer = document.createElement('div');
+    cardContainer.classList.add('card-container');
+
     const card = document.createElement('div');
     card.classList.add('card', className);
 
@@ -33,7 +36,10 @@ function _generateCard(className) {
     const elementsToAppend = _generateCardContents(className);
     elementsToAppend.forEach(element => card.appendChild(element));
 
-    return card;
+    // add card to container 
+    cardContainer.appendChild(card);
+
+    return cardContainer;
 }
 
 function _generateCardContents(className) {
