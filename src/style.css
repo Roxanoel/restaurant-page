@@ -33,7 +33,7 @@
     --bright-yellow-crayola: #FFAB25;
     --slimy-green: #478E02;
 
-    /* defaults */
+    /* defaults for fonts */
     color: white;
     font-family: 'Crimson Text', serif;
     font-size: 20px;
@@ -69,6 +69,7 @@ h1 {
     font-family: 'Blackwood Castle', serif;
     font-size: 4rem;
     letter-spacing: 3px;
+    color: white;
     text-shadow: 5px 5px black;
 
     margin: 0;
@@ -77,6 +78,8 @@ h1 {
 h2 {
     font-family: 'Smallburg', sans-serif;
     font-size: 1.5rem;
+
+    color: var(--bistre);
 }
 
 .links-container {
@@ -121,10 +124,66 @@ h2 {
 
     box-sizing: border-box;
     padding: 2rem;
+    padding-top: 10vh;
     
     display: flex;
     flex-direction: column;
+}
+
+.goblins {
+    display: flex;
+
+    padding: 2vw;
+    
     justify-content: center;
+    gap: 2vw;
+}
+
+.goblin {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 2rem;
+
+    font-size: 24px;
+
+    background-color: var(--upsdell-red);
+    border-radius: 5px;
+    border: 2px outset #b45763;
+
+    padding: 1rem;
+}
+
+.goblin-img {
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+
+    border-radius: 50%;
+    border-style: outset;
+    border-color: var(--bright-yellow-crayola);
+
+    min-height: 20vh;
+    min-width: 20vh;
+}
+
+.goblin-img.feast {
+    background-image: url('../images/ai-goblin-tavern.png');
+}
+
+.goblin-img.drink {
+    background-image: url('../images/ai-goblin-tavern-4.png');
+}
+
+.goblin-img.play {
+    background-image: url('../images/goblin-tavern-2.png');
+}
+
+.tagline {
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }
 
 #content {
