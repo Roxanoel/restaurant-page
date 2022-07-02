@@ -11,9 +11,9 @@ const linksText = ['The Den', 'Feast!', 'Contact'];
 
 //#region Execution
 renderSharedContent();
-//generateHomepageContent(getMainContainer()); DISABLED FOR TESTING
+generateHomepageContent(getMainContainer()); 
 //generateFeastPageContents(getMainContainer());
-generateContactPageContents(getMainContainer());
+//generateContactPageContents(getMainContainer());
 //#endregion
 
 //#region Methods
