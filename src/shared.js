@@ -1,6 +1,7 @@
 //#region Global State
 const restaurantName = "The Goblin's Den";
 const linksText = ['The Den', 'Feast!', 'Contact'];
+const linksIds = ['home', 'feast', 'contact'];
 //#endregion
 
 //#region functions
@@ -39,6 +40,7 @@ function generateLinkTabs() {
     for (let i = 0; i < 3; i++) {
         const link = document.createElement('li');
         link.textContent = linksText[i];
+        link.setAttribute('id', linksIds[i]);
         links.push(link);
     }
     // add links to ul 
