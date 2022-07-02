@@ -49,19 +49,19 @@ function generateLinkTabs() {
 
 function generateMain() {
     const main = document.createElement('main');
-    const mainContainer = document.createElement('div');
-    mainContainer.setAttribute('id', 'main-container');
-    main.appendChild(mainContainer);
+    const pageContainer = document.createElement('div');
+    pageContainer.setAttribute('id', 'page-container');
+    main.appendChild(pageContainer);
     return main;
 }
 
-function getMainContainer() {
-    return document.getElementById('main-container');
+function getPageContainer() {
+    return document.getElementById('page-container');
 }
 //#endregion
 //#region exports
 export {
     generateSharedContent,
-    getMainContainer
+    getPageContainer
 };
 //#endregion

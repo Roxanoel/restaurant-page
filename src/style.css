@@ -117,7 +117,7 @@ h2 {
     background-color: var(--parchment);
 }
 
-#main-container {
+#page-container {
     background-color: var(--parchment);
     border-radius: 20px;
 

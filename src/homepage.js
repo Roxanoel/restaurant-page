@@ -6,14 +6,14 @@ const _taglineText = 'They may be ugly, but they really know how to party!';
 //#endregion
 
 //#region Methods
-function generateHomepageContent(mainContainer) {
+function generateHomepageContent(parentElement) {
     const goblins = _assembleGoblinImages();
 
     const tagline = _createDivWithClass('tagline');
     tagline.textContent = _taglineText;
 
-    mainContainer.appendChild(tagline);
-    mainContainer.appendChild(goblins);
+    parentElement.appendChild(tagline);
+    parentElement.appendChild(goblins);
 }
 
 function _createDivWithClass(className) {
