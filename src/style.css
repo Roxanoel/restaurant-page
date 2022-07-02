@@ -275,6 +275,40 @@ h2 {
     color: white;
 }
 
+.map-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+    padding: 2rem;
+
+    gap: 1rem;
+
+    min-height: 25vh;
+}
+
+.map-info-grid p {
+    color: var(--bistre);
+    margin: 0;
+}
+
+.map-info-grid h3 {
+    color: var(--upsdell-red);
+    margin: 0;
+}
+
+#map-img {
+    grid-row: 1 / 3;
+
+    background-image: url('../images/map.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+
+    border: 5px outset var(--upsdell-red);
+    border-radius: 5px;
+}
+
 #content {
     
     display: flex;
