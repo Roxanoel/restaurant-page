@@ -80,8 +80,8 @@ function _generateOpeningTimesDiv() {
 }
 
 function _generateContactContainer() {
-    const container = document.createElement('div');
-    container.classList.add('contact-container');
+    const card = document.createElement('div');
+    card.classList.add('contact-card');
 
     //Elements to append
     const heading = document.createElement('h2');
@@ -90,8 +90,12 @@ function _generateContactContainer() {
     btn.textContent = 'Send a Pigeon';
 
     // Appending children
-    container.appendChild(heading);
-    container.appendChild(btn);
+    card.appendChild(heading);
+    card.appendChild(btn);
+
+    const container = document.createElement('div');
+    container.classList.add('contact-container');
+    container.appendChild(card);
 
     return container;
 }
