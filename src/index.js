@@ -24,10 +24,29 @@ generateHomepageContent(getPageContainer());
 
 function init() {
     generateSharedContent(content);
+    homeTab = document.getElementById('home');
+    feastTab = document.getElementById('feast');
+    contactTab = document.getElementById('contact');
+
+    addTabListeners();
 }
 
-function selectHomepage() {
+function selectHomepage(event) {
+    console.log('home');
+}
 
+function selectFeastPage(event) {
+    console.log('feast');
+}
+
+function selectContactPage(event) {
+    console.log('contact');
+}
+
+function addTabListeners() {
+    homeTab.addEventListener('click', selectHomepage);
+    feastTab.addEventListener('click', selectFeastPage);
+    contactTab.addEventListener('click', selectContactPage);
 }
 
 //#endregion
