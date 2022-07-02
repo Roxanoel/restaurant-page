@@ -1,6 +1,6 @@
 //#region State
 const headingText = 'Where to find us';
-const addressText = 'Main Square, Queensport';
+const addressText = 'Cobblers Square, Queensport <br> Nightenvale <br> Realms of Magic';
 const openingTimesText = 'Open every day from 5pm until the break of dawn!'
 //#endregion
 
@@ -52,7 +52,7 @@ function _generateAddressDiv() {
     heading.textContent = 'Address:';
 
     const address = document.createElement('p');
-    address.textContent = addressText;
+    address.innerHTML = addressText;
 
     // Appending children
     div.appendChild(heading);
