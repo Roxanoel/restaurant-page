@@ -7,6 +7,7 @@ const openingTimesText = 'Open every day from 5pm until the break of dawn!'
 //#region functions
 function generateContactPageContents(parentElement) {
     parentElement.appendChild(_generateMapContainer());
+    parentElement.appendChild(_generateContactContainer());
 }
 
 function _generateMapContainer() {
@@ -17,7 +18,7 @@ function _generateMapContainer() {
     heading.textContent = headingText;
     
     const mapInfoGrid = _generateMapInfoGrid();
-
+    
     // Appending children
     mapContainer.appendChild(heading);
     mapContainer.appendChild(mapInfoGrid);
@@ -76,6 +77,23 @@ function _generateOpeningTimesDiv() {
     div.appendChild(times);
 
     return div;
+}
+
+function _generateContactContainer() {
+    const container = document.createElement('div');
+    container.classList.add('contact-container');
+
+    //Elements to append
+    const heading = document.createElement('h2');
+    heading.textContent = 'Have a question?'
+    const btn = document.createElement('button');
+    btn.textContent = 'Send a Pigeon';
+
+    // Appending children
+    container.appendChild(heading);
+    container.appendChild(btn);
+
+    return container;
 }
 //#endregion
 
