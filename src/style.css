@@ -275,12 +275,17 @@ h2 {
     color: white;
 }
 
+#map-container {
+    margin-top: 5vh;
+}
+
 .map-info-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
 
     padding: 2rem;
+
 
     gap: 1rem;
 
@@ -316,6 +321,7 @@ h2 {
 .contact-card {
     align-self: end;
     justify-self: center;
+    margin-top: 5vh;
     
     background-color: var(--bistre);
 
