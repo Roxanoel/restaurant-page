@@ -40,7 +40,7 @@ function selectHomepage(event) {
     regenSharedContents();
 
     // Update appearance of selected tab
-    homeTab.classlist.add('selected');
+    homeTab.classList.add('selected');
 
     // Generares the right page content
     generateHomepageContent(getPageContainer());
@@ -79,6 +79,7 @@ function regenSharedContents() {
     contactTab = document.getElementById('contact');
     addTabListeners();
 }
+
 
 function addTabListeners() {
     homeTab.addEventListener('click', selectHomepage);
